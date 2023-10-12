@@ -1,9 +1,6 @@
 # Cache
+This is a repository for different caching algorithms
 
-
-## Key Benefits:
-
-- 
 ## How to Install
 
 ```bash
@@ -12,9 +9,11 @@ npm install --save effective-cache
 
 ## How to Use
 
-### s3-fifo cache example
+### S3-FIFO cache example
 
-Based on [this paper](https://blog.jasony.me/system/cache/2023/08/01/s3fifo)
+More information about this algorithm you can find in [this article](https://amarchenko.dev/blog/2023-10-12-memory-cache/)
+
+size: 0.8Kb after gzip
 
 ```typescript
 import { S3FifoCache } from 'effective-cache';
@@ -31,12 +30,3 @@ cache.get("key") // -> undefined
 
 cache.clear();
 ```
-
-
-## Features
-
-
-### 
-
-
-## TODO
